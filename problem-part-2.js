@@ -27,3 +27,15 @@ console.log(calculator(10, 20, "divide"));
 console.log(calculator(10, 20, "add"));
 console.log(calculator(10, 20, "substract"));
 console.log(calculator(10, 20, "multiply"));
+
+console.log('=====================');
+
+
+// handle unexpected function input 
+function myFunction(x, y){
+    if(typeof x !== 'number' || typeof y !== 'number'){
+        return 'Input a valid number';
+    }
+    return x + y;
+}
+console.log(myFunction(5, 5));

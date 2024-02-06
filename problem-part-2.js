@@ -1,6 +1,18 @@
 // Task -1:
 // Find the lowest number in the array below.
 const heights = [167, 190, 120, 165, 137];
+function lowestNumber(array){
+    let lowestNum = array[0];
+    for(const number of array){
+        if(lowestNum > number){
+            lowestNum = number;
+        }
+    }
+    return lowestNum;
+}
+console.log(`The lowest number is ${lowestNumber(heights)}`);
+
+console.log('=======================');
 
 // Task -2:
 // Find the friend with the smallest name.
